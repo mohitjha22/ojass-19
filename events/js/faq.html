@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='faqApp'>
+<head>
+	<title>FAQ</title>
+</head>
+<body ng-controller='demo'>
+{{faq}}
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script type="text/javascript" src="firebase.js"></script>
+<script type="text/javascript">
+	angular.module('faqApp',[])
+	.controller('demo',['$scope',function($scope){
+		firebase.database().ref('/Faq').once('value',function(snap){
+			$scope.$apply(function(){
+				var zz=snap.val();
+				console.log(zz);
+				$scope.faq=zz;
+			})
+		})
+	}])
+</script>
+</html>
+
+

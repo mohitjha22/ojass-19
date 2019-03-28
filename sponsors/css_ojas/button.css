@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'KleinSlabserif-Bold';
+  src: url('../assets/fonts/KleinSlabserif-Bold/KleinSlabserif-Boldd41d.html?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/KleinSlabserif-Bold/KleinSlabserif-Bold.html') format('woff'),
+  url('../assets/fonts/KleinSlabserif-Bold/KleinSlabserif-Bold-2.html')  format('truetype'),
+  url('../assets/fonts/KleinSlabserif-Bold/KleinSlabserif-Bold-3.html#KleinSlabserif-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../assets/fonts/Futura/FuturaBTBookd41d.html?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Futura/FuturaBTBook.html') format('woff'),
+  url('../assets/fonts/Futura/FuturaBTBook-2.html')  format('truetype'),
+  url('../assets/fonts/Futura/FuturaBTBook-3.html#KleinSlabserif-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    -webkit-font-smoothing: antialiased;
+
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+}
+
+a {
+  color: #FFF;
+}
+
+img,a{
+  border:none;
+  text-decoration:none;
+}
+
+.homePage a{
+  color:#ffffff;
+  opacity:0.3;
+}
+
+.share a{
+  opacity:1 !important;
+}
+
+.postPartners a{
+  opacity:1 !important;
+}
+
+.homePage a:hover{
+  opacity:1;
+}
+
+body{
+	margin:0;
+	padding:0;
+  background-color:#000000;
+}
+
+#ie-wrapper{
+	position:absolute;
+	width:625px;
+	height:100px;
+	margin-top:-160px;
+	margin-left:-312px;
+	top:50%;
+	left:50%;
+}
+
+#ie-wrapper h1{
+	font-family: Arial,sans-serif;
+	font-size:21px;
+	color:#ffffff;
+	text-align:center;
+}
+
+#ie-wrapper a,#ie-wrapper p{
+	color:#be231e;
+	font-family: Arial,sans-serif;
+	font-size:18px;
+	text-align:center;
+	text-decoration: none;
+}
+
+/* ------ SCROLL PANEL ----- */
+
+.sp-viewport{
+}
+.sp-scrollbar {
+  width: 1px;
+  cursor: pointer;
+  left:-30px !important;
+}
+
+.sp-scrollbar .sp-thumb {
+  background-color: #ffffff;
+  -webkit-transition: height 0.2s ease-in-out;
+  -moz-transition: height 0.2s ease-in-out;
+  -ms-transition: height 0.2s ease-in-out;
+  -o-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+}
+
+.sp-scrollbar.active .sp-thumb {
+  background-color: #ffffff;
+}
+
+/* ------ VIDEO ----- */
+video.transition
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 1000px;
+  margin-top:80px;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.btnLeft, .btnRight {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  width: 100px;
+  height: 30px;
+  padding: 10px 0;
+  background: rgba(255,255,255,0);
+  text-transform: uppercase;
+  font-family: 'futura-pt', sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 2px;  
+  cursor: pointer;
+}
+
+.btnLeft  { left: 35px }
+.btnRight { right: 35px }
+
+.btnLeftTitle, .btnRightTitle {
+  position: absolute;
+  opacity: .4;
+  margin-top: 3px;
+}
+
+.btnLeftTitle { left: 20px }
+.btnRightTitle { right: 18px;}
+
+.btnLeftArrow, .btnRightArrow {
+  position: absolute;
+}
+
+.btnLeftArrow  { left: 0 }
+.btnRightArrow { right: 0 }
+
+.btnLeftLineBg, .btnRightLineBg {
+  position: absolute;
+  background: #2c2c2c;
+  width: 50px;
+  height: 1px;
+  top: 19px;
+}
+
+.btnLeftLineBg {  left: 8px }
+.btnRightLineBg { right: 8px }
+
+.btnLeftLine, .btnRightLine {
+  position: absolute;
+  background: #FFF;
+  width: 30px;
+  height: 1px;
+  top: 19px;
+}
+
+.btnLeftLine {  left: 8px }
+.btnRightLine { right: 8px }
+///////////////////////////////////////
+.btnRight:hover .btnRightArrow {
+  -webkit-animation: arrow 0.3s;
+  animation: arrow 0.3s;
+}
+@-webkit-keyframes arrow{
+  from {
+    opacity: 0;
+    bottom:30px;
+  }
+  to {
+    opacity: 1;
+    right:0;
+  }
+}
+@keyframes arrow{
+  from {
+    opacity: 0;
+    right:30px;
+  }
+  to {
+    opacity: 1;
+    right:0;
+  }
+}
+.btnRight:hover .btnRightLine {
+  -webkit-animation: arrowline 0.2s;
+  animation: arrowline 0.2s;
+}
+@-webkit-keyframes arrowline{
+  from {
+    right:60px;
+  }
+  to {
+    right:8px;
+  }
+}
+@keyframes arrowline{
+  from {
+    right:60px;
+  }
+  to {
+    right:8px;
+  }
+}

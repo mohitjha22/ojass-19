@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200);
+
+body {
+    color: #858585;
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+h4,
+.h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container {
+    width: 1170px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.team
+{
+    width: 46%;
+    min-height: 100%;
+    border: 1px solid rgba(133,133,133,.15);
+    background-color: #fff;
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,.09);
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.09);
+    box-shadow: 0 0 8px rgba(0,0,0,.09);
+    float: left;
+    margin: 0 16px;
+    xmargin-left: 16px;
+}
+.teamimg
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: -80px;
+    width:170px;
+    height:170px;
+    xbackground: #1bbc9d;
+    xbox-shadow: 0 0 8px rgba(0, 0, 0, 0.09);
+}
+
+.teamsocial
+{
+    height: 48px;
+    background-color: #48484d;
+    position: relative;
+    bottom: -14px;
+    xleft: 0;
+    xdisplay: inline;
+}
+
+.facebook-team
+{
+    float: left;
+    width: 48px;
+    height: 48px;
+    color: #D1CFCF;
+    display:block;
+    font-size:30px;
+    padding: 7px;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.github-team
+{
+    float: left;
+    width: 48px;
+    height: 48px;
+    color: #D1CFCF;
+    display:block;
+    font-size:30px;
+    padding: 7px;
+    text-align: center;
+}
+
+.instagram-team
+{
+    float: left;
+    width: 48px;
+    height: 48px;
+    color: #D1CFCF;
+    display:block;
+    font-size:30px;
+    padding: 7px;
+    text-align: center;
+}
+
+
+.facebook-team:hover
+{
+    color: rgb(23, 0, 124);
+}
+
+.github-team:hover
+{
+    color: #000000;
+}
+
+.instagram-team:hover
+{
+    color: rgb(247, 30, 77);
+}
